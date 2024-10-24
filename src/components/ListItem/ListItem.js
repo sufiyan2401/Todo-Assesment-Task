@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { StyleSheet, Pressable, Text, View, Alert } from 'react-native';
+import { Pressable, Text, View, Alert } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { useTheme } from '../theme/useTheme';
-import Card from './Card';
+import { useTheme } from '../../theme/useTheme';
+import Card from '../Card/Card';
+import { styles } from './styles';
 
 const ListItem = ({ item, toggleStatus, onDelete }) => {
     const { theme } = useTheme();
@@ -88,14 +89,3 @@ const ListItem = ({ item, toggleStatus, onDelete }) => {
 
 export default ListItem;
 
-const styles = StyleSheet.create({
-    card: {
-        marginBottom: 10,
-    },
-    row: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        paddingVertical: 2,
-    },
-});

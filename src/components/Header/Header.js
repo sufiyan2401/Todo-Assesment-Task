@@ -1,6 +1,7 @@
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/Ionicons';
+import { styles } from './styles';
 
 const Header = ({ theme, toogleTheme }) => {
     return (
@@ -19,16 +20,3 @@ const Header = ({ theme, toogleTheme }) => {
 
 export default Header
 
-const styles = StyleSheet.create({
-    header: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: 16,
-        elevation: 4,
-    },
-    headerText: {
-        fontSize: 20,
-        fontWeight: '600',
-    },
-})

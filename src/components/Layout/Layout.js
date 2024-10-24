@@ -1,7 +1,8 @@
 import React from 'react';
-import { StatusBar, StyleSheet, View } from 'react-native';
+import { StatusBar, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { useTheme } from '../theme/useTheme';
+import { useTheme } from '../../theme/useTheme';
+import { styles } from './styles';
 
 
 const Layout = ({ children, style, ...rest }) => {
@@ -24,10 +25,3 @@ const Layout = ({ children, style, ...rest }) => {
 
 export default Layout;
 
-const styles = StyleSheet.create({
-    container: { flex: 1 },
-    layout: {
-        flex: 1,
-        backgroundColor: '#ffffff',
-    },
-});
