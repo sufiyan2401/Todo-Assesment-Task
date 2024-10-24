@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Alert, Modal, StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import { Alert, Modal, View, Text, TouchableOpacity } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTheme } from '../theme/useTheme';
 import Layout from '../components/Layout/Layout';
